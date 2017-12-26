@@ -1,0 +1,100 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container,
+.navbar {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+/* Плавні зміни властивостей лінків */
+
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+
+/* Зміни CSS коду розпочинати звідси */
+
+/*************************************/
+
+section {
+    min-height: 50vh;
+    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 0px 0;
+    /* Внітрішні відступи зверху та знизу у секціях <section> */
+    padding-right: 0 px;
+    padding-right: 0 px;
+
+}
+
+#s2 {
+    display:flex;
+    align-items: center;
+    min-height: 100vh;
+}
+#s4 {
+   
+    background-color: #fff;
+    /* Колір фону для секцій #s2, #s4 */
+    color: #000;
+    padding-right: 0px;
+    min-height: 25vh;
+     align-items: center;
+}
+
+a {
+    color: #c00;
+    /* Колір текстових лінків */
+}
+
+a:focus,
+a:hover {
+    color: #c00;
+    /* Колір текстових лінків для псевдокласів */
+}
+
+/**************************************/
+
+/* Зміна властивостей для breakpoints */
+
+/**************************************/
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 15px;
+        /* Для Small додати відступи */
+        padding-right: 15px;
+        /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+    section {
+        padding: 0px 0;
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+    html {
+        font-size: 9.375px;
+    }
+}
+@media only screen and (max-width:1024px) {
+    html {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:1024px) {
+    html {
+        font-size: 9.375px;
+    }
+}
+
